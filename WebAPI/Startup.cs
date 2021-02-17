@@ -30,11 +30,11 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             //içinde data tutmuyorsa singleton güzel performanslı.
-            //Autofac\N'nject'CastleW'ndsor\StructureMap\L'ghtInject\DryInject --> IoC Container bizim için IoC alt yapısı sunan ürünler.
+            //Autofac\Ninject\CastleWindsor\StructureMap\LightInject\DryInject --> IoC Container bizim için IoC alt yapısı sunan ürünler.
             //AOP ->  bir metodun önünde/sonunda/hataver diğinde çalışan kod parçacıkları.
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>();
-            services.AddSingleton<IProductDal,EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>();
+            //services.AddSingleton<IProductDal,EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
