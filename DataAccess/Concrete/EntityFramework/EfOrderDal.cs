@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    class EfOrderDal: EfEntityRepositoryBase<Order,NorthWindContext>,IOrderDal
+    class EfOrderDal: EfEntityRepositoryBase<Order,NorthwindContext>,IOrderDal
     {
     }
 }
